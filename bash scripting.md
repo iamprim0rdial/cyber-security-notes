@@ -1,16 +1,14 @@
 # Bash Scripting
-Bash scripting is very useful for automate the everyday task in Linux. It has little bit complex syntax. It start with a shebang. 
+Bash scripting is very useful for automate the everyday task in Linux. It has little bit complex syntax. It start with a shebang.   
 Wait what is Shebang 😲 ?  
 lemme tell you 😌, Some Blah Blah stuff! Shebang is a combination of bash # and bang ! followed by the bash shell path. This is the first line of the script. Shebang tells the shell to execute it via bash shell. 
 
 **#!/bin/bash** <-- shebang line
 
----
+Every script name end with **.sh** extension, example: **filename.sh** . it is considered as good practice to write a simple name of script according to the work. **Note:** Don’t forget to give executable permission to user simply by typing chmod u+x filename.sh
 
-## Bash Scripting :
-Every script name end with **.sh** extension. it is considered as good practice to write a simple name of script according to the work .
+to execute the script we will use this command  ./filename.sh 
 
-- **Note:** Don’t forget to give executable permission to user simply by typing chmod u+x <filename.sh>
 
 ## Keywords  
 - **echo** keyword is use to display the message   
