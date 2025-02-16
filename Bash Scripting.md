@@ -149,6 +149,8 @@ case $number in
 esac
 
 ```
+---
+
 ## for-loop
 1. **Basic `for` loop (Iterating over a sequence of numbers)**
 ```bash
