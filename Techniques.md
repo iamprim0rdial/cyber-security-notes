@@ -8,3 +8,7 @@
 - **Layout obfuscation:** This technique rearranges operations in software to make it difficult to follow the software's flow.
 - **Code transposition:** This technique transforms code while maintaining its practicality, making it difficult to reverse engineer.
 - **Runtime polymorphism:** This technique changes the appearance of malware in run-time to avoid detection.
+
+
+## Web application firewall
+Knowing the application firewall behind the web is very crucial thing to know . because WAF (Web application firewall ) block some of your request if it is not meet the policies . WAF work on set of rules known as policies . If you know the firewall behind your testing web application your are going to save your time .
