@@ -149,3 +149,37 @@ case $number in
 esac
 
 ```
+## for-loop
+1. **Basic `for` loop (Iterating over a sequence of numbers)**
+```bash
+for (( i=1; i<=5; i++ ))
+do
+echo "Iteration number: $i"
+done
+```
+
+2. **for loop with a list of items**
+```bash
+for item in apple banana cherry
+do
+echo "I like $item"
+done
+```
+
+3.`for` **loop with a range using** `{start..end}`
+
+```bash
+for i in {1..5}
+do
+echo "Number: $i"
+done
+```
+
+4. **`for` loop with `seq` command**
+```bash
+for i in $(seq 1 5)
+do
+echo "Counting: $i"
+done
+```
+
