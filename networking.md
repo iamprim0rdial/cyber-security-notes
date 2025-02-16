@@ -47,7 +47,7 @@ A network protocol is a set of rules for communication between devices on a netw
 
 ---
 
-### OSI Model:
+## OSI Model:
 
 The OSI (Open Systems Interconnection) model is a framework/reference model that tell how the data is transmitted between computers over a network.
  - 7 different layers: Each of which is responsible for performing a specific task.
@@ -62,3 +62,10 @@ The OSI (Open Systems Interconnection) model is a framework/reference model that
 7. **Application Layer:** This layer is the highest layer and deals with the user-end applications and services, such as email and web browsing.
 
 Each layer of the OSI model communicates with the layer above and below it, allowing data to be transmitted from one computer to another in a standardized and organized way
+
+### Advantage of OSI model
+
+1. interoperability 
+2. simplification
+3. modular  design
+4. training
