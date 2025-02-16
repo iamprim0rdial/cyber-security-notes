@@ -9,26 +9,56 @@ Every script name end with **.sh** extension, example: **filename.sh** . it is c
 
 to execute the script we will use this command  ./filename.sh . let's do postmortem dot forward-slash your-filename 
 
+--- 
 
-## Keywords  
-- **echo** keyword is use to display the message   
-- **read** keyword is use to read data/input from user 
-- **$** It is a replacement variable . It is use to replace the current variable with argument  for example $1 replace with first argument given with shell call ****  
-- **Array:** array is sequence of same data type so for example : ARRAY_NUM = (1 2 3 4 5) or ARRAY_STR = (ONE TWO THREE FOUR) ... etc. to access the array we use for loop: **for value in $ARRAY_VAR_NAME;**
-- **for value in $ARRAY_NUM;** —> This line will fetch the value in ARRAY_NUM variable one by one  then assign in into value variable   ,
-- **do echo $value —>**  This line will take value from above value variable and display the values/element . 
-- **done —>**  Don’t forget to use this keyword in the end else the program will not gonna work .This keyword will tell the shell that ok! this line of code is done here you can print the output .
+## Bash Scripting Keywords:
 
-**Note:** User can also print the length of string or number of character in value by simply add one line which is |—
+1. **`echo`**
+    - **Usage**: Displays a message or value to the screen.
+    - **Example**: `echo "Hello, World!"`
+    - **Explanation**: `echo` is used to print the output to the terminal.
+2. **`read`**
+    - **Usage**: Accepts input from the user and stores it in a variable.
+    - **Example**: `read name`
+    - **Explanation**: `read` takes input from the user and assigns it to the variable `name`.
+3. **`$`**
+    - **Usage**: Used to access the value of a variable or argument.
+    - **Example**: `echo $HOME`
+    - **Explanation**: `$` is used to replace a variable with its value, such as `$1` for the first argument passed to the script.
+4. **`$1`, `$2`, ..., `$n`**
+    - **Usage**: Positional parameters used to refer to the arguments passed to a script.
+    - **Example**: `echo $1`
+    - **Explanation**: `$1` refers to the first argument passed to the script or function, `$2` to the second, and so on.
+5. **`$@`**
+    - **Usage**: Refers to all arguments passed to the script or function.
+    - **Example**: `echo $@`
+    - **Explanation**: `$@` expands to all arguments as individual words.
+6. **`$#`**
+    - **Usage**: Represents the number of arguments passed to the script.
+    - **Example**: `echo "Number of arguments: $#"`
+    - **Explanation**: `$#` gives the count of arguments provided to the script.
+7. **`$?`**
+    - **Usage**: Returns the exit status of the last executed command.
+    - **Example**: `echo $?`
+    - **Explanation**: `$?` is used to retrieve the exit status of the last command. A value of `0` means success, while any other value indicates an error.
+8. **`$()`**
+    - **Usage**: Used for command substitution, where the output of a command is captured and used as part of a variable or expression.
+    - **Example**: `var=$(ls)`
+    - **Explanation**: `$()` captures the output of the command `ls` and stores it in the variable `var`.
+9. **`declare`**
+    - **Usage**: Used to define variables and assign specific attributes (like types) to them.
+    - **Example**: `declare -i num=5`
+    - **Explanation**: `declare` can be used to declare an integer variable (`i`), ensuring only integer values are assigned.
+10. **`export`**
+- **Usage**: Used to make a variable available to child processes or other scripts.
+- **Example**: `export VAR=value`
+- **Explanation**: `export` makes a variable (like `VAR`) available to subshells and scripts launched from the current shell.
 
-- **do echo -n $value —>** This Line of will print the array without newline and space like ONETWOTHREEFOUR 
-- **wc -c; done  —>**  wc means word count . -c is flag to extend the output and done .
+## If-else 
 
+**if else is use when we have some specific condition to apply on**
 
-### If-else — Bash Scripting
-
-if else is use when we have some specific condition to apply on 
-
+```bash
 if [ condition ]; then 
 
 echo “Display message”
@@ -43,7 +73,11 @@ echo “Display message”
 
 fi
 
-condition could be like - 
+```
+
+**condition could be like:**  
+
+```bash
 
 if (${1,,} = “vishal”) then 
 
@@ -53,7 +87,9 @@ else
 
 echo “Sorry I don’t know!  bye” ;;
 
-### Case-statement — Bash Scripting
+```
+
+## Case-statement 
 
 Case - statement is use to run code according to their input .
 
