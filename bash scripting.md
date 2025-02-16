@@ -7,7 +7,7 @@ lemme tell you 😌, Some Blah Blah stuff! Shebang is a combination of bash # an
 
 Every script name end with **.sh** extension, example: **filename.sh** . it is considered as good practice to write a simple name of script according to the work. **Note:** Don’t forget to give executable permission to user simply by typing chmod u+x filename.sh
 
-to execute the script we will use this command  ./filename.sh 
+to execute the script we will use this command  ./filename.sh . let's do postmortem dot forward-slash your-filename 
 
 
 ## Keywords  
