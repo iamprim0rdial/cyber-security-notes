@@ -20,20 +20,22 @@ This part is ignored at runtime.
 ---
 ## Strings
 ```bash
+
 url = "https://www.github.com"
-print(url[7]) # w is in 9th position. Index starting from h[0]
-print(len(url)) # print number of characters in url
+print(url[7])  # 'w' is in 8th position. Index starts from 'h' at position 0.
+print(len(url))  # prints the number of characters in the URL
+print(url.upper())  # Converts all characters in the URL to uppercase
+print(url.lower())  # Converts all characters in the URL to lowercase
+print("github" in url)  # Returns True if 'github' is found in the URL
 
-''' STARTSWITH AND ENDSWITH '''
-startswith function is used to find whether the string starting with specified characters or not
-endswith function is used to find whether the string ending with specified characters or not.
+new_url = url.replace("github", "gitlab")  # Replaces 'github' with 'gitlab'
+print(new_url)  # prints 'https://www.gitlab.com'
+print(url[8:14])  # Extracts 'github' from the URL (from index 8 to 14)
+print(url.split("."))  # splits the URL at every '.' and returns a list
+print(url.find("github"))  # Returns the index of the first occurrence of 'github'
+print(url.startswith("https"))  # Returns True since the URL starts with 'https'
+print(url.endswith(".com"))  # Returns True since the URL ends with '.com'
 
-These two functions return True or False.
-''' STRING FORMATTING '''
-Python uses string formatting like C, where the % operator formats variables with values given in a tuple.
-app = "wordpress"
-version= 5.7
-print("%s version %s is vulnerable" % (app, version))
 ```
 ---
 
