@@ -21,7 +21,25 @@
 1. **Physical Topology :**  Tell us how components are physically connected to each other . 10BaseT and FDDI is example of physical topology
 2. **Logical Topology :**  Tell us how communication is done through network device logically .
 
-- **Note:** You might be using 10BaseT with physical star topology to connect component together however these component communicate using logical bus topology. Token ring is good example of communication protocol that has different physical topology from its logical one
+- **Note:** You might be using 10BaseTwith physical star topology to connect component together however these component communicate using logical bus topology. Token ring is good example of communication protocol that has different physical topology from its logical one 
+
+---
+
+### CABLE STANDARD
+
+**10BASE-T:** 10 REFER TO Max speed which is 10mbps , Base is Baseband Transmission and T is for twisted pair cable.  
+**10BASE - 2 :**  IT IS ALSO REFER TO Thin Ethernet . uses coaxial cable it has maximum speed is 10Mbps and Maximum length of 200 meters.  
+**100BASE - T : Maximum**  speed 100Mbps . Uses UTP cat. 5 or higher. maximum length of 100 meters . also known as fast ethernet. Uses copper cable .  
+**100BASE - FX : Maximum**  speed 100Mbps .Uses **Fibre** cable. maximum length of 400 meters (half duplex) and 2 kilometres (full duplex)  
+
+**Gigabits standards**  
+
+**1000BASE - T : Maximum**  speed 100Mbps .  Uses UTP cat. 5 or higher. maximum length of 100 meters   
+**1000BASE - TX : Similar to**  1000BASE T  . Supposed to be an easier setup because it only uses 2 unidirectional pairs of wires for communication. Never Caught on . Known as a failure in commercial implementation    
+**10G BASE - T :**  Maximum speed of 10,000Mbps. Uses both STP and UTP cabling. maximum length of 100 metres if using category or cat 6a cables and Maximum length of 55 metres if using cat 6.  
+**10G BASE - SR :**  SR stand for short range. commonly used standard multimode fibre specification. and have length of 300 metres .   
+**10G BASE - ER :**  ER stand for extended range  and have length of 40 kilometres using single mode fibre  
+**10G BASE - SW : Same specs as 10G BASE SR**  , But specifically used to operate over SONET (Synchronous optical network)  
 
 ---
 
