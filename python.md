@@ -20,8 +20,8 @@ This part is ignored at runtime.
 ---
 ## Strings
 ```bash
-url = "https://www.instagram.com/_snex_/"
-print(url[7]) # g is in 7th position. Index starting from e
+url = "https://www.github.com"
+print(url[7]) # w is in 9th position. Index starting from h[0]
 print(len(url)) # print number of characters in url
 
 ''' STARTSWITH AND ENDSWITH '''
