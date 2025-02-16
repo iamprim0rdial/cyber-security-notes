@@ -91,7 +91,9 @@ echo “Sorry I don’t know!  bye” ;;
 
 ## Case-statement 
 
-Case - statement is use to run code according to their input .
+**Case - statement is use to run code according to their input.**
+
+```bash
 
 case expression in 
 
@@ -114,3 +116,5 @@ code 3 run if none of the pattern match the expression
 ;;
 
 esac
+
+```
