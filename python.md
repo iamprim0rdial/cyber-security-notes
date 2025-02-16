@@ -18,6 +18,24 @@ This part is ignored at runtime.
 '''
 ```
 ---
+## Strings
+```bash
+url = "https://www.instagram.com/_snex_/"
+print(url[7]) # g is in 7th position. Index starting from e
+print(len(url)) # print number of characters in url
+
+''' STARTSWITH AND ENDSWITH '''
+startswith function is used to find whether the string starting with specified characters or not
+endswith function is used to find whether the string ending with specified characters or not.
+
+These two functions return True or False.
+''' STRING FORMATTING '''
+Python uses string formatting like C, where the % operator formats variables with values given in a tuple.
+app = "wordpress"
+version= 5.7
+print("%s version %s is vulnerable" % (app, version))
+```
+---
 
 ## Try and Catch 
 - try and catch are use to handle the exception 
