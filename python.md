@@ -1,21 +1,27 @@
 ## Variable and Data Type:
 ```bash
-port = 8080 # int
-url = "http://github.com" # string
-version = 5.5 # float
-vulnerable = True # boolean, True or False
-domains ['github.com', 'medium.com', 'hackerone.com', 'gitbook.com'] # list
-ip("192.168.1.11", "192.168.1.10") # tuple
+port = 8080  # int
+url = "http://github.com"  # string
+version = 5.5  # float
+vulnerable = True  # boolean, True or False
+domains = ['github.com', 'medium.com', 'hackerone.com', 'gitbook.com']  # list
+ip = ("192.168.1.11", "192.168.1.10")  # tuple
 server = {
-            "verily": "nginx",
-             "flipkart": "envoy"
-         } # dictionary
-vulnerable_versions = (4.4,4.5, 4.6,4.7} # set
+    "verily": "nginx", 
+    "flipkart": "envoy"
+}  # dictionary
+vulnerable_versions = {4.4, 4.5, 4.6, 4.7}  # set
+
+# This is a multi-line comment used to describe the code. 
 '''
-This is the multi line comments,
-which is used to describe the code.
-This part is ignored at runtime.
+You can write multiple lines of comments here, 
+which are ignored at runtime. Comments help explain the code logic 
+for developers working on the code.
 '''
+
+# Checking the type of each variable type()
+print(type(port))  # OUTPUT <class 'int'>
+
 ```
 ---
 ## Strings
