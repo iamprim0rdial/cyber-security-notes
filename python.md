@@ -45,6 +45,29 @@ print(url.endswith(".com"))  # Returns True since the URL ends with '.com'
 ```
 ---
 
+## List
+```bash
+
+data = ["github.com", 80, 5.5]
+
+print("domain " + data[0])  # Accessing the first element (github.com) and concatenating it with the string
+
+# Negative indexing: you can access the last element using -1 index, 
+# and the second last element using -2.
+print(data[-2])  # This will print '80', the second-to-last element in the list
+print(len(data))  # Prints the number of elements in the list
+
+# Example of list functions:
+ports = [80, 81]
+ports.remove(80)  # Removes the first occurrence of 80 from the list
+ports.append(8080)  # Adds 8080 to the end of the list
+ports.insert(1, 81)  # Inserts 81 at index 1 (second position)
+ports.pop()  # Removes the last element (8080)
+ports.clear()  # Clears all elements in the list
+
+
+```
+
 ## Try and Catch 
 - try and catch are use to handle the exception 
 - try block contains code that can raise an exception and except block contain code to handle that exception
