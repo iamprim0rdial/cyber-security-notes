@@ -1,5 +1,6 @@
 # Bash Scripting
-Bash scripting is very useful for automate the everyday task in Linux. It has little bit complex syntax. It start with a shebang. Wait what is Shebang 😲 ?  
+Bash scripting is very useful for automate the everyday task in Linux. It has little bit complex syntax. It start with a shebang. 
+Wait what is Shebang 😲 ?  
 lemme tell you 😌, Some Blah Blah stuff! Shebang is a combination of bash # and bang ! followed by the bash shell path. This is the first line of the script. Shebang tells the shell to execute it via bash shell. 
 
 **#!/bin/bash** <-- shebang line
