@@ -60,6 +60,10 @@ The Reverse Connection Multi Handler is often discussed in the context of penetr
 
 - Actions taken after gaining access to a system, such as gathering information, escalating privileges, or maintaining access.
 
+--- 
+
+## More detail about Bind shell Vs Reverse shell
+
 - ### 1. **Bind Shell**
 
 - **Definition**: A bind shell listens on a specific port on the victim's machine. The attacker connects to this port to gain control.
@@ -87,6 +91,8 @@ The Reverse Connection Multi Handler is often discussed in the context of penetr
 - **Reverse Shell**: Victim connects back to the attacker's open port.
 - **Multi Handler**: Manages multiple reverse shell connections at once.
 
+---
+
 ### More about Listener:
 A **listener** is essentially a service or application that waits for incoming network connections. In the context of penetration testing and hacking, it's specifically designed to accept connections from other machines (like compromised systems).
 
@@ -98,7 +104,7 @@ A **listener** is essentially a service or application that waits for incoming n
 
 So, think of it as a service that "listens" for incoming connections, waiting for a client (like a reverse shell) to connect and establish communication.
 
-
+---
 
 Connecting back to an attacker’s machine, as seen in a reverse shell scenario, typically occurs when a malicious payload is executed on a victim's system. Here’s a detailed breakdown of a common scenario:
 
