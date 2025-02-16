@@ -54,7 +54,7 @@ to execute the script we will use this command  ./filename.sh . let's do postmor
 - **Example**: `export VAR=value`
 - **Explanation**: `export` makes a variable (like `VAR`) available to subshells and scripts launched from the current shell.
 
-## If-else 
+## If-else statement 
 
 **if else is use when we have some specific condition to apply on**
 
