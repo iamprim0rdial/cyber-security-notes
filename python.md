@@ -67,6 +67,53 @@ ports.clear()  # Clears all elements in the list
 
 
 ```
+---
+
+## Basic Operator
+```bash
+# Assigning values to variables
+a = 5
+b = 2
+
+# Addition
+print(a + b)  # Output: 7
+
+# Subtraction
+print(a - b)  # Output: 3
+
+# Multiplication
+print(a * b)  # Output: 10
+
+# Division
+print(a / b)  # Output: 2.5
+
+# Floor Division (integer division)
+print(a // b)  # Output: 2
+
+# Power Operator (exponentiation)
+print(a ** b)  # Output: 25
+
+# String Concatenation
+string_1 = "Bug"
+string_2 = "Bounty"
+string_3 = "Automation"
+print(string_1 + string_2 + string_3)  # Output: BugBountyAutomation
+hello = "hello"
+print(hello * 5)  # Output: hellohellohellohellohello
+
+# List Operations
+list_1 = [1, 2, 3, 4, 5]
+list_2 = [6, 7, 8, 9, 0]
+
+# Concatenating lists
+print(list_1 + list_2)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+# Repeating lists
+print(list_1 * 3)  # Output: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+```
+
+
+---
 
 ## Try and Catch 
 - try and catch are use to handle the exception 
