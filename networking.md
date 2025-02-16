@@ -1,3 +1,28 @@
+## TOPOLOGY
+**Defination:** Topology is the physical or logical layout that tell how computers and devices connect and communicate with each other in a network.
+
+## Types: 
+1. **Star Topology**: A network where all devices are connected to a central hub or switch. An example of media type used  in star topo, is 10baseT Ethernet .
+2. **Bus Topology**: A network where all devices are connected to a single central cable (bus). Media type such as 10Base5 or 10Base2 Ethernet . vampire tap
+3. **Ring Topology**: A network where each device is connected to two other devices, forming a circular path. Every nodes is connected to its next node . Dual ring topology is used when you need redundancy . for ex if one of the component is fail than ring wrap itself to provide single ring functional . FDDI ( fiber distributed data transfer )  is an example of dual ring topo.
+4. **Mesh Topology**: A network where every device is connected to every other device, providing multiple paths.
+5. **Point-to-Point Topology**: A direct connection between two devices, forming a simple link.
+6. **Client-Server Topology**: A network where clients request services from a central server.
+7. **Peer-to-Peer Topology**: A network where all devices act as both clients and servers, sharing resources with each other.
+8. **Hybrid Topology**: A combination of two or more different topologies in a single network.
+
+### Common Hybrid Topologies
+
+- **Star-Ring Network**: A combination of star and ring topologies, where devices in a star setup form a ring.
+- **Star-Bus Network**: A combination of star and bus topologies, where devices connect to a central hub like in a star, but the central hub connects to a bus cable.
+
+### Apart from this there are 2 type of topology 
+
+1. **Physical Topology :**  Tell us how components are physically connected to each other . 10BaseT and FDDI is example of physical topology
+2. **Logical Topology :**  Tell us how communication is done through network device logically .
+
+---
+
 ## Data Communication: 
 Data communication means two exchange the data between two or more nodes or devices. the effectiveness of data comm. is depend upon 4 characteristic .
 
@@ -18,12 +43,12 @@ jitter refers to variation in packet arrival time
 ### Network protocols
 A network protocol is a set of rules for communication between devices on a network. It determines the format, timing, and flow of information exchanges between devices to ensure successful communication. Think of it as a common language for computers to communicate with each other over a network. **HTTP, SMTP, DHCP, FTP, Telnet, SNMP , TCP , IP , UDP , POP.**
 
+---
+
 ### OSI Model:
 
-# OSI model
-
 The OSI (Open Systems Interconnection) model is a framework/reference model that tell how the data is transmitted between computers over a network.
- - 7 different layers -> Each of which is responsible for performing a specific task.
+ - 7 different layers: Each of which is responsible for performing a specific task.
    - These layers are:
 
 1. **Physical Layer:** This layer deals with the physical components of the network, such as cables, transmitters, and receivers.
