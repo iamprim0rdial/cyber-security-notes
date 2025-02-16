@@ -1,3 +1,14 @@
+
+---
+
+## Try and Catch 
+- try and catch are use to handle the exception 
+- try block contains code that can raise an exception and except block contain code to handle that exception
+
+Note: exception: An exception is an error that occurs during the execution of a program, which disrupts its normal flow.
+
+---
+
 ## Python Library for bug hunting
 
 1. **Scapy :** Scapy is a powerful Python library used for network packet manipulation. It allows users to create, send, receive, and analyze network packets.
