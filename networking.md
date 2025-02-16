@@ -21,7 +21,7 @@
 1. **Physical Topology :**  Tell us how components are physically connected to each other . 10BaseT and FDDI is example of physical topology
 2. **Logical Topology :**  Tell us how communication is done through network device logically .
 
-- **Note:** You might be using 10BaseT with physical star topology to connect component together however these component communicate using logical bus topology. 
+- **Note:** You might be using 10BaseT with physical star topology to connect component together however these component communicate using logical bus topology. Token ring is good example of communication protocol that has different physical topology from its logical one
 
 ---
 
