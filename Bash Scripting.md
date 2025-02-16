@@ -184,8 +184,10 @@ do
 echo "Counting: $i"
 done
 ```
+---
 
 ## Conditional
+
 ### Conditions
 Note that `[[` is actually a command/program that returns either `0` (true) or `1` (false). Any program that obeys the same logic (like all base utils, such as `grep(1)` or `ping(1)`) can be used as condition, see examples.
 
@@ -219,3 +221,29 @@ Note that `[[` is actually a command/program that returns either `0` (true) or `
 | `[[ FILE1 -nt FILE2 ]]` | 1 is more recent than 2 |
 | `[[ FILE1 -ot FILE2 ]]` | 2 is more recent than 1 |
 | `[[ FILE1 -ef FILE2 ]]` | Same files |
+
+
+---
+
+## Functions
+
+```bash
+function_name () {
+    # code to be executed
+}
+```
+
+**example:**
+
+```bash
+#!/bin/bash
+
+# Define the function
+greet() {
+    echo "Hello, $1!"  # $1 is the first argument passed to the function
+}
+
+# Call the function
+greet "Vishal"
+greet "Trevor"
+```
