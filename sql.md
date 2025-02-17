@@ -95,6 +95,7 @@
 5. [HackerRank SQL Practice](https://www.hackerrank.com/domains/tutorials/10-days-of-sql) - Practice a variety of SQL problems from basics to advanced.
 6. [SQL Fiddle](http://sqlfiddle.com/) - Test and share your SQL queries directly online.
 7. [DB-Fiddle](https://www.db-fiddle.com/) - Write and execute SQL queries online, supporting multiple database systems.
+8. [oracle live SQL](https://www.oracle.com/database/technologies/oracle-live-sql/) - need signin 
 
 
 
