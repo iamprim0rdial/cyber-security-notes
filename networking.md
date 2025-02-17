@@ -55,15 +55,15 @@ Each port is associated with a **port number**. These numbers range from 0 to 65
 
 ## Example of Common Ports and Their Services:
 
-- **Port 80 (HTTP)[]**: Used for serving web pages using the HTTP protocol (unencrypted).
-- **Port 443 (HTTPS)**: Used for serving secure web pages over HTTPS.
+- **Port 80 [HTTP](https://github.com/iamprim0rdial/cyber-security-notes/blob/main/http.md)**: Used for serving web pages using the HTTP protocol (unencrypted).
+- **Port 443 [HTTPS](https://github.com/iamprim0rdial/cyber-security-notes/blob/main/http.md)**: Used for serving secure web pages over HTTPS.
 - **Port 21 (FTP)**: Used for file transfer via FTP.
 - **Port 22 (SSH)**: Used for secure remote login via the SSH protocol.
 - **Port 25 (SMTP)**: Used for sending email through the SMTP protocol.
 - **Port 53 (DNS)**: Used for Domain Name System (DNS) resolution.
 - **Port 3306 (MySQL)**: Default port used for MySQL database connections.
 
-## Useful Ports for Bug Hunters
+## Useful Ports for Hunters
 
 As a **bug hunter**, certain ports are particularly important for identifying and exploiting vulnerabilities in a system. Below is a list of commonly used ports that bug hunters should keep an eye on during penetration testing:
 
@@ -87,18 +87,16 @@ As a **bug hunter**, certain ports are particularly important for identifying an
 ### Dynamic or Private Ports (49152-65535)
 - **Ports for Ephemeral (Temporary) Connections**: These are typically assigned by the operating system for client connections. These are useful for testing how a server handles a large number of simultaneous connections.
 
-
-
 ### Notes:
 - Always check for **open ports** on a target system, they can indicate potential attack surfaces.Use tools like **Nmap** to scan for open ports and identify services running on a target system. Be aware of **default ports** used by specific services, as they might be misconfigured or exposed to the internet.
 
 
 ---
 
-### Network protocols
+## Network protocols
 A network protocol is a set of rules for communication between devices on a network. rotocols define how data is transmitted, formatted, and processed. Each protocol serves a specific purpose and operates on a particular layer of the OSI model (Open Systems Interconnection). . It determines the format, timing, and flow of information exchanges between devices to ensure successful communication. Think of it as a common language for computers to communicate with each other over a network. **HTTP, SMTP, DHCP, FTP, Telnet, SNMP , TCP , IP , UDP , POP.**
 
-## Common Networking Protocols
+### Common Networking Protocols
 
 Below is an explanation of some of the most commonly used networking protocols:
 
