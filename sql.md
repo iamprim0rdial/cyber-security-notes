@@ -84,3 +84,17 @@
        ```sql
        ALTER TABLE Users DROP COLUMN Email;
        ```
+---
+
+## practicing SQL commands online 
+
+1. [SQLZoo](https://sqlzoo.net/) - Interactive tutorials and quizzes to practice SQL commands.
+2. [W3Schools SQL Tutorial](https://www.w3schools.com/sql/) - Beginner-friendly tutorial with an interactive SQL editor.
+3. [LeetCode SQL](https://leetcode.com/problemset/database/) - Solve real-world SQL challenges with an online editor.
+4. [Mode Analytics SQL Tutorial](https://mode.com/sql-tutorial/) - Learn SQL with real-world queries in an interactive SQL editor.
+5. [HackerRank SQL Practice](https://www.hackerrank.com/domains/tutorials/10-days-of-sql) - Practice a variety of SQL problems from basics to advanced.
+6. [SQL Fiddle](http://sqlfiddle.com/) - Test and share your SQL queries directly online.
+7. [DB-Fiddle](https://www.db-fiddle.com/) - Write and execute SQL queries online, supporting multiple database systems.
+
+
+
