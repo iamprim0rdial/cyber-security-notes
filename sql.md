@@ -1,6 +1,6 @@
 # SQL Commands
 
-```bash
+```sql
 --------------------------------------------------------------------------------------------------------------------------
 
     SELECT:     Select data from database                             example: SELECT * FROM employees;
@@ -84,6 +84,45 @@
        ```sql
        ALTER TABLE Users DROP COLUMN Email;
        ```
+---
+
+## Order of execution of sql command
+
+Understanding the order of execution in an SQL query is key to writing efficient and correct queries. Here’s the general order of execution for SQL commands, starting with the most basic:
+
+1. **FROM**: First, the database determines which table(s) to pull the data from.
+2. **JOIN**: If you're joining multiple tables, SQL will perform the join next.
+3. **WHERE**: Filters the rows based on the condition specified.
+4. **GROUP BY**: Groups rows that have the same values into summary rows.
+5. **HAVING**: Applies a condition to the groups formed by `GROUP BY` (filters the grouped data).
+6. **SELECT**: After filtering and grouping, SQL selects which columns to display.
+7. **DISTINCT**: If used, it removes duplicate rows from the result.
+8. **ORDER BY**: Orders the results based on specified columns.
+9. **LIMIT/OFFSET**: Limits the number of rows returned (if specified).
+
+### Example Query Breakdown:
+```sql
+SELECT COUNT(*)
+FROM Employees
+WHERE department = 'Sales'
+GROUP BY manager
+HAVING COUNT(*) > 5
+ORDER BY COUNT(*) DESC
+LIMIT 10;
+```
+
+**Order of Execution:**
+1. **FROM**: From the `Employees` table.
+2. **WHERE**: Filters rows where `department = 'Sales'`.
+3. **GROUP BY**: Groups by the `manager`.
+4. **HAVING**: Filters groups where the count of employees is greater than 5.
+5. **SELECT**: Selects the count of employees in each group.
+6. **ORDER BY**: Orders the results by the count in descending order.
+7. **LIMIT**: Limits the result to the top 10 rows.
+
+**Notes:** This is the logical order SQL uses to process the query, even if you write it in a different order!
+
+
 ---
 
 ## practicing SQL commands online 
