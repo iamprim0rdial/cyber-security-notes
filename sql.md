@@ -1,24 +1,21 @@
 # SQL Commands
 
 ```bash
------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 
     SELECT:     Select data from database                             example: SELECT * FROM employees;
     AS:         Rename column or table with alias                     example: SELECT first_name AS "First Name", last_name AS "Last Name" FROM Employees;
     FROM:       Specify table we’re pulling from                      example: SELECT name, age FROM Students;
     WHERE:      Filter query to match a condition                     example: SELECT * FROM Orders WHERE order_status = 'Shipped';
-    JOIN:       Combine rows from 2 or more tables                    example: SELECT Employees.name, Departments.name 
-                                                                               FROM Employees 
-                                                                                JOIN Departments ON Employees.department_id = Departments.id;
+    JOIN:       Combine rows from 2 or more tables                    example: SELECT Employees.name, Departments.name FROM Employees JOIN Departments ON Employees.department_id = Departments.id;             ---------------------------------------------------------------------------------------------------                                          
+    AND:        Combine conditions in a query. All must be met        example: SELECT * FROM Employees WHERE age > 30 AND department = 'HR';
+    OR:         Combine conditions in a query. One must be met        example: SELECT * FROM Employees WHERE age > 30 OR department = 'HR';
+    LIKE:       Search for patterns in a column                       example: SELECT * FROM Employees WHERE name LIKE 'John%';
+    IN:         Specify multiple values when using WHERE              example: SELECT * FROM Products WHERE category IN ('Electronics', 'Furniture');
+    IS NULL:    Return only rows with a NULL value                    example: SELECT * FROM Employees WHERE manager_id IS NULL;
+    LIMIT:      Limit the number of rows returned                     example: SELECT * FROM Employees LIMIT 10;
 
-    AND:        Combine conditions in a query. All must be met        example:
-    OR:         Combine conditions in a query. One must be met        example:
-    LIKE:       Search for patterns in a column                       example:
-    IN:         Specify multiple values when using WHERE              example:
-    IS NULL:    Return only rows with a NULL value                    example:
-    LIMIT:      Limit the number of rows returned                     example:
-
---------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
     CASE:        Return value on a specified condition
     CREATE:      Create TABLE, DATABASE, INDEX or VIEW
@@ -27,7 +24,7 @@
     DELETE:      Delete rows from a table
     ALTER TABLE: Add/Remove columns from table
 
---------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 
     GROUP BY:   Group rows that have same values into summary rows
     ORDER BY:   Set order of result. Use DESC to reverse order
