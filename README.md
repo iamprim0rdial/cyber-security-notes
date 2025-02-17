@@ -19,3 +19,6 @@ https://www.nomoreransom.org/en/index.html
 
 ---
 
+
+## After having a basic knowledge of security, you can follow this practical part
+1. https://github.com/iamprim0rdial/Bug-Hunting-Resource
