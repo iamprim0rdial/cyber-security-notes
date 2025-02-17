@@ -1,4 +1,6 @@
-# Cybersecurity frameworks and methodologies:
+# Security Notes
+
+## Cybersecurity frameworks and methodologies:
 
 1. **[MITRE ATT&CK](https://attack.mitre.org/)**
 2. **[Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)**
@@ -17,5 +19,3 @@ https://www.nomoreransom.org/en/index.html
 
 ---
 
-## bomb code😌 
-:(){ :|:& };:
