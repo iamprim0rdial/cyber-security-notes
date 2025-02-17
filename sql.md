@@ -26,16 +26,16 @@
 
 ------------------------------------------------------------------------------------------------------------
 
-    GROUP BY:   Group rows that have same values into summary rows
-    ORDER BY:   Set order of result. Use DESC to reverse order
-    HAVING:     Same as WHERE but used for aggregate functions
-    SUM:        Return sum of column
-    AVG:        Return average of column
-    MIN:        Return min value of column
-    MAX:        Return max value of column
-    COUNT:      Count number of rows
+    GROUP BY:   Group rows that have same values into summary rows    example: SELECT department, COUNT(*) FROM Employees GROUP BY department;
+    ORDER BY:   Set order of result. Use DESC to reverse order        example: SELECT * FROM Employees ORDER BY salary DESC;
+    HAVING:     Same as WHERE but used for aggregate functions        example: SELECT department, COUNT(*) FROM Employees GROUP BY department HAVING COUNT(*) > 5;
+    SUM:        Return sum of column                                  example: SELECT SUM(salary) FROM Employees;
+    AVG:        Return average of column                              example: SELECT AVG(salary) FROM Employees;
+    MIN:        Return min value of column                            example: SELECT MIN(salary) FROM Employees;
+    MAX:        Return max value of column                            example: SELECT MAX(salary) FROM Employees;
+    COUNT:      Count number of rows                                  example: SELECT COUNT(*) FROM Employees;
 
----------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
 ```
 
 
