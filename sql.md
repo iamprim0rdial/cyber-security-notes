@@ -17,12 +17,12 @@
 
 -------------------------------------------------------------------------------------------------------
 
-    CASE:        Return value on a specified condition
-    CREATE:      Create TABLE, DATABASE, INDEX or VIEW
-    DROP:        Delete TABLE, DATABASE, or INDEX
-    UPDATE:      Update table data
-    DELETE:      Delete rows from a table
-    ALTER TABLE: Add/Remove columns from table
+    CASE:        Return value on a specified condition                example: SELECT name, CASE WHEN age >= 18 THEN 'Adult' ELSE 'Minor' END AS status FROM Employees;
+    CREATE:      Create TABLE, DATABASE, INDEX or VIEW                example: CREATE TABLE Customers ( id INT PRIMARY KEY,name VARCHAR(100),email VARCHAR(100));
+    DROP:        Delete TABLE, DATABASE, or INDEX                     example: DROP TABLE Employees;
+    UPDATE:      Update table data                                    example: UPDATE Employees SET salary = 60000 WHERE id = 1;
+    DELETE:      Delete rows from a table                             example: DELETE FROM Employees WHERE id = 1;
+    ALTER TABLE: Add/Remove columns from table                        example: ALTER TABLE Employees ADD column address VARCHAR(255);
 
 ------------------------------------------------------------------------------------------------------------
 
