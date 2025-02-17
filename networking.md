@@ -87,3 +87,7 @@ Each layer of the OSI model communicates with the layer above and below it, allo
 2. simplification
 3. modular  design
 4. training
+
+---
+
+## Protocols:
