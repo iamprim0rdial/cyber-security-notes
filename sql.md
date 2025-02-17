@@ -41,45 +41,46 @@
 ----------------------------------------------------------------------------------------------------------------------
 ```
 
+---
 
-# Example
+## SQL CRUD cheat sheet 
 
-- **Select first 10 rows for 2 columns**:
-    
-    `SELECT column1, column2 FROM table_name LIMIT 10;`
-    
-- **Select all rows with multiple filters applied**:
-    
-    `SELECT * FROM table_name WHERE condition1 AND condition2;`
-    
-- **Select all rows from col1 and col2 ordering by col1**:
-    
-    `SELECT col1, col2 FROM table_name ORDER BY col1;`
-    
-- **Return count of rows in table**:
-    
-    `SELECT COUNT(*) FROM table_name;`
-    
-- **Return sum of col1**:
-    
-    `SELECT SUM(col1) FROM table_name;`
-    
-- **Return max value from col1**:
-    
-    `SELECT MAX(col1) FROM table_name;`
-    
-- **Compute summary statistics by grouping col2**:
-    
-    `SELECT col2, COUNT(*), AVG(col1), SUM(col1) FROM table_name GROUP BY col2;`
-    
-- **Combine data from two tables using a left join**:
-    
-    `SELECT * FROM table1 LEFT JOIN table2 ON table1.id = table2.id;`
-    
-- **Aggregate and filter results**:
-    
-    `SELECT col1, COUNT(*) FROM table_name GROUP BY col1 HAVING COUNT(*) > 5;`
-    
-- **Implementation of CASE statement**:
-    
-    `SELECT col1, CASE WHEN condition THEN 'value1' ELSE 'value2' END FROM table_name;`
+1. **Create Table**  
+   - **Definition**: Creates a new table in the database.
+   - **Example**:  
+     ```sql
+     CREATE TABLE Users (ID INT, Name VARCHAR(100), Age INT);
+     ```
+
+2. **Delete Table**  
+   - **Definition**: Removes a table and all its data from the database.
+   - **Example**:  
+     ```sql
+     DROP TABLE Users;
+     ```
+
+3. **Update Table**  
+   - **Definition**: Modifies existing records in a table.
+   - **Example**:  
+     ```sql
+     UPDATE Users SET Age = 30 WHERE ID = 1;
+     ```
+
+4. **Delete Records**  
+   - **Definition**: Deletes specific records from a table.
+   - **Example**:  
+     ```sql
+     DELETE FROM Users WHERE Age > 50;
+     ```
+
+5. **Add/Remove Column**  
+   - **Definition**: Adds or removes columns in an existing table.
+   - **Example**:  
+     - Add:  
+       ```sql
+       ALTER TABLE Users ADD Email VARCHAR(100);
+       ```
+     - Remove:  
+       ```sql
+       ALTER TABLE Users DROP COLUMN Email;
+       ```
