@@ -42,7 +42,7 @@
     useradd and usermod: Add a new user or change existing user data
     passwd: Create or update passwords for existing users
 ```
-## Advance
+## Advance Linux Command:
 ```bash
 lscpu: display information about the CPU architecture
 lspci: display list of PCI devices.
@@ -50,6 +50,5 @@ lsusb: display list of usb devices.
 df -h: report file system space usage [-h: is a flag]
 free -h: Display amount of free and used memory in the system
 hostnamectl: Control the system hostname
-lsb_release -a: print OS information [-a is a flag].  Alternate : cat /etc/os-release
- 
+lsb_release -a: print OS information [-a is a flag].  Alternate : cat /etc/os-release 
 ``` 
