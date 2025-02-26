@@ -29,7 +29,7 @@
 ## What Are Ports?
 
 In computer networking, a **port** is a communication endpoint that allows data to flow between a device and the network. Ports are used by protocols like TCP/IP to differentiate between different services running on the same machine.  
-**for example** 
+**for example**   
 Imagine you live in a building with many apartments. The building is like a computer, and each apartment represents a different service or program running on that computer. The door of the apartment is like a port on the computer. Now, if you want to send a parcel (data) to a specific service (like a website or email program) inside the building, you need to know the correct apartment number (the port number). When you send the parcel to the building's main entrance (the computer's IP address), the receptionist (TCP/IP protocol) will direct the parcel to the right apartment based on the apartment number (port number).
 
 Each port is associated with a **port number**. These numbers range from 0 to 65535 and are divided into different categories:
