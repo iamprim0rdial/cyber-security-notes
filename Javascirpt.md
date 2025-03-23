@@ -6,9 +6,7 @@
 
 ## Variables and Datatypes in JavaScript
 - **Variables :** A variable is like a container that store data which can be reused later in the program. In JavaScript, variables are declared using following keywords
-### 1. **`var`**:
-
-- **Scope**: `var` is function-scoped or globally-scoped (if declared outside a function).
+  **`1. var`**:  `var` is function-scoped or globally-scoped (if declared outside a function).
 - **Example**:
     
     ```jsx
@@ -17,11 +15,8 @@
     console.log(x); // 20
     
     ```
-    
 
-### 2. **`let`**:
-
-- **Scope**: `let` is block-scoped (limited to the block in which it is defined, like inside loops or conditionals).
+  **`2. let`**: `let` is block-scoped (limited to the block in which it is defined, like inside loops or conditionals).
 - **Example**:
     
     ```jsx
@@ -29,12 +24,9 @@
     x = 20; // This is allowed
     console.log(x); // 20
     
-    ```
-    
+    ```   
 
-### 3. **`const`**:
-
-- **Scope**: `const` is also block-scoped (like `let`). You **cannot reassign** a `const` variable. Once a value is assigned, it cannot be changed.
+ **`3. const`**: `const` is also block-scoped (like `let`). But you **cannot reassign** a `const` variable. Once a value is assigned, it cannot be changed.
 - **Example**:
     
     ```jsx
@@ -42,7 +34,45 @@
     x = 20; // This will throw an error:
     
     ```
-    
+ ### Datatypes
+ **JavaScript has 8 Datatypes**  
+- String
+- Number
+- Bigint
+- Boolean
+- Undefined
+- Null
+- Symbol
+- Object
+  
+**The Object Datatype**  
+The object data type can contain both built-in objects, and user defined objects:
+Built-in object types can be: objects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more. 
+
+```jsx
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+
+```
+
 
 ---
 
@@ -80,6 +110,8 @@ document.getElementById("Testing").innerHTML="I have learned";
 </body>
 </html>
 ```
+
+**Note:** Learn about **[JavaScript Events](https://www.w3schools.com/js/js_events.asp)** and than **[HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)**
 
 
 ## Reference and Idea ...  
