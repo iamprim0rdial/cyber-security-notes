@@ -13,6 +13,7 @@
 ---
 
 ## The No more Ransomware website :
+No Ransom, the place to find the latest decryptors, ransomware removal tools, and information on ransomware protection.  
 https://www.nomoreransom.org/en/index.html
 
 ---
