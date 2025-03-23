@@ -106,7 +106,7 @@ document.getElementById("Testing").innerHTML="I have learned";
 }
 // JavaScript HTML methods getElementById(). It "finds" an HTML element (with id="testing"), and changes the element content (innerHTML) to "I have learned"
 </script>
-<img src=you.jpeg onerror=myfoo()>
+<button type="button" onclick=myfoo()>Click me</button>
 </body>
 </html>
 ```
