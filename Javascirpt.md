@@ -1,4 +1,4 @@
-javascript is client-side language 
+JavaScript is a programming language used to create dynamic content for websites. It can be used for both client-side and server-side scripting.
 
 ## function:
 **syntax**
