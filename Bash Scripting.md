@@ -29,30 +29,28 @@ to execute the script we will use this command  ./filename.sh . let's do postmor
     - **Usage**: Positional parameters used to refer to the arguments passed to a script.
     - **Example**: `echo $1`
     - **Explanation**: `$1` refers to the first argument passed to the script or function, `$2` to the second, and so on.
-5. **`$@`**
-    - **Usage**: Refers to all arguments passed to the script or function.
-    - **Example**: `echo $@`
-    - **Explanation**: `$@` expands to all arguments as individual words.
-6. **`$#`**
-    - **Usage**: Represents the number of arguments passed to the script.
-    - **Example**: `echo "Number of arguments: $#"`
-    - **Explanation**: `$#` gives the count of arguments provided to the script.
-7. **`$?`**
+5. **`$?`**
     - **Usage**: Returns the exit status of the last executed command.
     - **Example**: `echo $?`
     - **Explanation**: `$?` is used to retrieve the exit status of the last command. A value of `0` means success, while any other value indicates an error.
-8. **`$()`**
+6. **`$()`**
     - **Usage**: Used for command substitution, where the output of a command is captured and used as part of a variable or expression.
     - **Example**: `var=$(ls)`
     - **Explanation**: `$()` captures the output of the command `ls` and stores it in the variable `var`.
-9. **`declare`**
+7. **`declare`**
     - **Usage**: Used to define variables and assign specific attributes (like types) to them.
     - **Example**: `declare -i num=5`
     - **Explanation**: `declare` can be used to declare an integer variable (`i`), ensuring only integer values are assigned.
-10. **`export`**
+8. **`export`**
 - **Usage**: Used to make a variable available to child processes or other scripts.
 - **Example**: `export VAR=value`
 - **Explanation**: `export` makes a variable (like `VAR`) available to subshells and scripts launched from the current shell.
+
+## Basic shell script:
+
+![Nano tutorial](https://github.com/user-attachments/assets/3c93e882-9156-46fb-81f2-8e374aa8f1f2)
+
+
 
 ---
 
