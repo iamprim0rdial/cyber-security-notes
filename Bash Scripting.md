@@ -147,6 +147,10 @@ case $number in
 esac
 
 ```
+# Case statement:
+
+![case_statment](https://github.com/user-attachments/assets/f60de030-9a40-4ebe-a686-ce71c3a6576e)
+
 ---
 
 ## for-loop
