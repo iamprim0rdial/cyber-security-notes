@@ -1,5 +1,5 @@
 # Cryptography🔐
-
+**Kerckhoffs’s principle: "A cryptosystem should be secure even if everything about the system, except the key, is public knowledge"**
 ---
 
 **Cryptography** is the practice of securing information while transmitting it from one computer to another or storing data on a computer to prevent unauthorized access. Cryptography involves encryption and decryption.
