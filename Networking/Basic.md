@@ -14,9 +14,12 @@
  But User/client is not directly connected to internet, instead it is connected through ISP 
 
 ```
+**Wimax :**
+
+( Worldwide  interoperability microwave access )  **a telecommunications technology aimed at providing wireless data over long distances in a variety of ways, from point-to-point links to full mobile cellular type access**
 ---
 
-Gateway help us to connect between different network. Its an application or software or firmware. it is not a deivce, in built in routers, same as router also called protocol converter
+**Gateway help us to connect between different network. Its an application or software or firmware. it is not a deivce, in built in routers, same as router also called protocol converter**
 
 ---
 1. LAN [ local area network ] → Small Network Connect Host      Faster | cheaper
