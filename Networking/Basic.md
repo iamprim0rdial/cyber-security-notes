@@ -1,3 +1,116 @@
+## Networking:
+
+ **ISP**  Internet service provider → which give us internet. example : airtel, jio, BSNL.
+```
+    Internet theoritically diagram:
+    
+    
+    🗄️ Servers are directly connected to the internet
+    |
+--------------------------INTERNET----------------------------------------         <-- Internet is like backbone wire.
+                              | 
+                              |
+     🖥️------------------- [ ISP ]
+ But User/client is not directly connected to internet, instead it is connected through ISP 
+
+```
+---
+
+Gateway help us to connect between different network. Its an application or software or firmware. it is not a deivce, in built in routers, same as router also called protocol converter
+
+---
+1. LAN [ local area network ] → Small Network Connect Host      Faster | cheaper
+
+        → Same room                 Common standard use: Ethernet
+
+        → Same Building
+
+        → Same Campus  
+
+1. WAN [ wide area network] → Host maybe widely dispersed     Slower | Expensive
+    
+    → Across Campus
+    
+    → Across Cities / Countries / Continent 
+    
+
+CSU / DSU → Channel service Unit/ Data service unit 
+
+      |———>———LAN————[. CSU/DSU  ]———→——-WAN————-|
+
+convert Data from LAN                to a WAN
+
+---
+## **Network Device**
+
+**Hub:**
+
+Connect computer devices together in star topology network. transfer data in every device connected to hubs [no intelligence] 
+
+**Switch:** 
+
+Intelligent version of Hub, contain memory element to store mac-address of every device. Good in security, Layer 2 device of OSI model.
+
+You can tell, switch whom to send data by telling IP address & port no. 
+
+The Spanning tree protocol:
+
+- Allow for fault tolerance and prevent unnecessary traffic loops.
+- Allow the switch to talk to each other to find if loop are happening in network.
+
+Multi layer switch: Operate at layer 2 and 3 of OSI Model
+
+Content switch: Can operate ay layer 4 through 7 of OSI model
+
+**Bridge:**
+
+Intelligent repeater contain memory device, store MAC address in RAM,  store incoming and outgoing data information
+
+**Routers:**
+
+Layer 3 device, Connect different network.
+
+**NICs:**
+
+Network Interface Card. work to convert incoming serial data into parallel data. Layer 1 and 2 device. every NICs comes with there MAC address [Hardware address]
+
+**Repeater:**
+
+Use wireless or wired connection. regenerate the wifi signals
+
+**Modem:** 
+
+Modulator and demodulator, 
+
+Work: To convert analogy signals into binary and vice versa. we can establish internet with the help of modem
+
+```
+                                        |||         |||         |||
+                         Phone         |   |       |   |       |   |
+01100111100100101010010[. Modem ] ----|-----|-----|-----|-----|-----|--
+                                             |   |       |   |
+                                              |||         |||
+
+actually device know                we communicate into analog pulse (Up and down)
+always binary language  
+
+Draw back: old device, low bandwidth (3000Hz) less speed,
+
+```
+Modify version of modem:
+
+**DSL:** digital subscriber line → most used in now, best bandwidth goes upto several millions of hertz, best speed
+
+- ADSL: Asynchronous digital subscriber line. 9Mbps( Download speed) 640 Kbps (upload speed). use telephone line to connect to internet. Most use in now days.
+- SDSL: synchronous digital subscriber line
+
+DRAWBACK: Your home should be front of ISP.
+
+       **Increase in cable length ∝ Internet speed [ more cable length slower speed ]**
+
+---
+
+
 ## TOPOLOGY
 **Defination:** Topology is the physical or logical layout that tell how computers and devices connect and communicate with each other in a network.
 
