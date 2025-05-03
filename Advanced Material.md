@@ -44,12 +44,6 @@ def my_function()
     ◦ Base64 decode the string to get the original pickle data. 
     ◦ Deserialize the pickle data to recreate the `my_function`.
 
-1. 1. **Serialize:** Convert `my_function` into a Python pickle file.
-2. 2. **Base64 Encode:** Convert the pickle file data into a Base64-encoded string.
-3. 3. **Store/Transmit:** Store the Base64 string, send it over a network, or embed it in a JSON object.
-4. 4. **Decode/Deserialize:** When you need to use the function again, you would:
-    - ◦ Base64 decode the string to get the original pickle data.
-    - ◦ Deserialize the pickle data to recreate the `my_function`
 
 ---
 
