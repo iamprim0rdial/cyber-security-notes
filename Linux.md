@@ -72,6 +72,19 @@ _ r w x r _ _ _ w _
 ~ **Note** Ensure you have proper power or privilege for assigning permissions to the files.
 
 ---
+Nice cmd is used to set priority of the process . for non -root user the range belongs to +0 — +19 least priority 
+
+Type: nice -n+15 find / -name “file-name”
+
+for security reasons user limitation can be set by configuring limit.conf file 
+
+`/etc/security/limits.conf`
+
+renice - cmd is used to change the priority of running process .
+
+— renice +15 -p 1163 [ -p is for process id flag 1163 is pid for GID -g and for UID -u ]
+
+---
 
 ## Basic Linux Command:
 
@@ -102,7 +115,7 @@ sort:            Linux command to sort the content of a file while outputting
 zip:             Zip files in Linux
 unzip:           Unzip files in Linux
 service:         Linux command to start and stop services
-ps:              Display active processes
+ps:              Display process snapshot
 kill:            Kill active processes by process ID or name
 df:              Display disk filesystem information
 mount:           Mount file systems in Linux
@@ -130,8 +143,22 @@ df -h:              report file system space usage [-h: is a flag]
 free -h:            Display amount of free and used memory in the system
 hostnamectl:        Control the system hostname
 lsb_release -a:     print OS information [-a is a flag].  Alternate : cat /etc/os-release
+jobs:               to  displays the list of processes running in the background and specify job number. 
+kill:               cmd used to kill jobs/processes by giving them signal code (
+
+which is :
+
+2  - SIGINT Immediate termination of the process
+9  - SIGKILL Interrupt the process (ctrl + d)
+15 - SIGTERM Clean termination of the process
+18 - SIGCONT resume the processes
+19 - SIGSTOP suspend the process
+
+for example :-  kill -9 1664 
+)
 
 ```
+
 ---
 
 ## Linux File System Hierarchy
