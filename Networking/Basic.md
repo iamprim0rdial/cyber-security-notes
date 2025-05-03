@@ -1,21 +1,4 @@
-## OSI Model:
-
-The OSI (Open Systems Interconnection) model is a framework/reference model that tell how the data is transmitted between computers over a network.
- - 7 different layers: Each of which is responsible for performing a specific task.
-   - These layers are:
-
-1. **Physical Layer:** This layer deals with the physical components of the network, such as cables, transmitters, and receivers.
-2. **Data Link Layer:** This layer is responsible for the reliable delivery of data over the physical layer by adding error checking and flow control to the data.
-3. **Network Layer:** This layer provides the routing and addressing of data, allowing it to travel from one network to another.
-4. **Transport Layer:** This layer is responsible for ensuring that data is transmitted reliably and in the correct order, by using techniques like flow control and error correction.
-5. **Session Layer:** This layer manages the communication sessions between applications and ensures that the data is transmitted in an orderly manner.
-6. **Presentation Layer:** This layer deals with the format and compression of data, ensuring that it can be understood by the application.
-7. **Application Layer:** This layer is the highest layer and deals with the user-end applications and services, such as email and web browsing.
-
-Each layer of the OSI model communicates with the layer above and below it, allowing data to be transmitted from one computer to another in a standardized and organized way
-
 ---
-
 ## TOPOLOGY
 **Defination:** Topology is the physical or logical layout that tell how computers and devices connect and communicate with each other in a network.
 
@@ -65,30 +48,6 @@ Each port is associated with a **port number**. These numbers range from 0 to 65
 - **Port 25 (SMTP)**: Used for sending email through the SMTP protocol.
 - **Port 53 (DNS)**: Used for Domain Name System (DNS) resolution.
 - **Port 3306 (MySQL)**: Default port used for MySQL database connections.
-
-## Useful Ports for Hunters
-
-As a **bug hunter**, certain ports are particularly important for identifying and exploiting vulnerabilities in a system. Below is a list of commonly used ports that bug hunters should keep an eye on during penetration testing:
-
-### Well-Known Ports (0-1023)
-- **Port 22 (SSH)**: Common for secure remote shell access. Misconfigurations can allow unauthorized access or weak password attacks.
-- **Port 23 (Telnet)**: An insecure remote login protocol. It's often vulnerable to eavesdropping and brute-force attacks.
-- **Port 80 (HTTP)**: Commonly used for unencrypted web traffic. Look for vulnerabilities like XSS, CSRF, and SQL injection.
-- **Port 443 (HTTPS)**: Secure web traffic. Look for vulnerabilities like SSL/TLS misconfigurations, weak ciphers, or missing certificates.
-- **Port 21 (FTP)**: File Transfer Protocol. Vulnerabilities include weak or missing authentication and data interception.
-- **Port 25 (SMTP)**: Simple Mail Transfer Protocol. Can be used for sending malicious emails or relay attacks.
-- **Port 53 (DNS)**: Domain Name System. Look for DNS misconfigurations, DNS cache poisoning, or information leaks.
-- **Port 110 (POP3)**: Used for receiving emails. Look for weak authentication and email interception vulnerabilities.
-
-### Registered Ports (1024-49151)
-- **Port 3306 (MySQL)**: Default MySQL database port. Vulnerabilities include weak authentication, SQL injection, and improper database configurations.
-- **Port 5432 (PostgreSQL)**: Default PostgreSQL database port. Misconfigurations can lead to unauthorized access or privilege escalation.
-- **Port 3389 (RDP)**: Remote Desktop Protocol. Known for vulnerabilities like weak passwords and exploits for remote code execution.
-- **Port 8080 (HTTP Alternative)**: Often used for alternative HTTP services or web application testing.
-- **Port 6379 (Redis)**: Default port for Redis. Unauthorized access can lead to arbitrary command execution and data compromise.
-  
-### Dynamic or Private Ports (49152-65535)
-- **Ports for Ephemeral (Temporary) Connections**: These are typically assigned by the operating system for client connections. These are useful for testing how a server handles a large number of simultaneous connections.
 
 ### Notes:
 - Always check for **open ports** on a target system, they can indicate potential attack surfaces.Use tools like **Nmap** to scan for open ports and identify services running on a target system. Be aware of **default ports** used by specific services, as they might be misconfigured or exposed to the internet.
