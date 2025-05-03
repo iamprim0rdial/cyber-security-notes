@@ -1,4 +1,3 @@
----
 ## TOPOLOGY
 **Defination:** Topology is the physical or logical layout that tell how computers and devices connect and communicate with each other in a network.
 
@@ -51,7 +50,6 @@ Each port is associated with a **port number**. These numbers range from 0 to 65
 
 ### Notes:
 - Always check for **open ports** on a target system, they can indicate potential attack surfaces.Use tools like **Nmap** to scan for open ports and identify services running on a target system. Be aware of **default ports** used by specific services, as they might be misconfigured or exposed to the internet.
-
 
 ---
 
