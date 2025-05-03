@@ -1,3 +1,7 @@
+# ☁AWS☁️
+
+---
+
 AWS stands for ( Amazon web services ) is a company that delivers online computing services over the internet ( Cloud ). Computing services like Storage , servers , software’s , database , analytics and intelligence etc . There are many services like EC2, ELB , VPC , S3 bucket etc .
 Cloud Computing: It simply follow the client server model . 
 
