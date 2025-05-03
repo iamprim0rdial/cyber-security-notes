@@ -23,7 +23,18 @@
 
 6. marshalled or serialized bytecode object
 
-getattr(builtins, eval)("import(os).system(id)")
+```
+
+```
+This is example of obfuscation:
+
+getattr(builtins, eval)("__import__('os').system('id')") ---This line means --> import os and run cmd id :)
+
+Let's see
+builtins is a module in Python that contains all built-in functions and exceptions.
+eval is a built-in function. This retrieves the eval function from builtins.
+Uses Python's __import__ function to import the os module. Then calls os.system('id'), which executes the shell command id
+
 ```
 ---
 
