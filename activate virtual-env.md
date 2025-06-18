@@ -2,8 +2,8 @@
 ---
 ```bash
 cd python-tool-folder
-python3 -m venv virtual-env-folder-name
-source venv/bin/activate
+python3 -m venv virtualenvironment
+source virtualenvironment/bin/activate
 pip install -r requirements.txt
 python setup[.]py
 ```
