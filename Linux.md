@@ -1,4 +1,6 @@
-# 📌 Table of Contents
+# 🐧 Linux Notes – Beginner to Advanced
+
+## 📌 Table of Contents
 
 - Accounts
 - Administration Files
@@ -60,12 +62,12 @@ Prefix in /etc/shadow indicates hashing algorithm:
 
 ## 🔏 Permissions
 **grants access to system resources, files, and folders and tell what you can do on the system.**
-```
+
 - **r → read [4]** 
 - **w → write [2]**
 - **x → executable [1]**
 - **_ → no permission. [0]**
-```
+
 ```
 
 _ r w x r _ _ _ w _ 
