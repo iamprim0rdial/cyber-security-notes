@@ -1,56 +1,78 @@
-## Account:
+# 📌 Table of Contents
+
+- Accounts
+- Administration Files
+- Password Encryption Algorithms
+- User & Group Management
+- Permissions
+- Process Priorities (nice & renice)
+- Linux Commands (Beginner → Advanced)
+- Linux File System Hierarchy
+- Shell Types
+- Environment Variables
+- Pipes & Redirection
+- Wildcards (Globbing)
+- Disk & Storage Commands
+- Services & Logs
+- Cron Jobs
+- Advanced Networking
+- System Information & Monitoring
+- Bash Scripting Basics
+
+  
+## 👤 Account:
 
 **Three type of account on linux** 
-
-1. Root account: Main Account with full power.
-2. Service account: Installed with package
-3. User account: Accounts with some power if it is given 
-
-**Four type of administration file:**
 ```
-/etc/passwd ⇒ User account full information
-/etc/shadow ⇒ User encrypted password
-/etc/group ⇒ hold group information
-/etc/gshadow ⇒ hold group’s encrypted password
+1. Root account:      Main Account with full power.
+2. Service account:   Installed with package
+3. User account:      Accounts with some power if it is given 
 ```
 
-**To find which algorithm is used to encrypt the password in linux:**
-
-if they start with (prefix) 
+## 📂 Four type of Administration Files
 ```
-- $6$ ⇒ , means used SHA512
-- $1$ ⇒ MD5
-- $2a ⇒ Bluefish
-- $5$ ⇒ SHA256
+/etc/passwd  : User account full information
+/etc/shadow  : User encrypted password
+/etc/group   : hold group information
+/etc/gshadow : hold group’s encrypted password
+
 ```
-## Managing users & groups commands
 
-- useradd → add account
-- usermod → modify account attribute
-- userdel → delete accounts
-- groupadd → add groups
-- groupmod → modifies groups
-- groupdel → remove groups
+## 🔐 Password Encryption Algorithms
 
+Prefix in /etc/shadow indicates hashing algorithm:
+```
+- $6$ : means used SHA512
+- $1$ : MD5
+- $2a : Bluefish
+- $5$ : SHA256
+```
+## 🧑‍💻 Managing users & groups commands
+```
+- useradd  : add account
+- usermod  : modify account attribute
+- userdel  : delete accounts
+- groupadd : add groups
+- groupmod : modifies groups
+- groupdel : remove groups
+```
 ---
 
-## Permissions
+## 🔏 Permissions
 **grants access to system resources, files, and folders and tell what you can do on the system.**
-
+```
 - **r → read [4]** 
 - **w → write [2]**
 - **x → executable [1]**
 - **_ → no permission. [0]**
-
+```
 ```
 
 _ r w x r _ _ _ w _ 
 0 1 2 3 4 5 6 7 8 9 ] ⇒ Total 10 character
 
 ```
-
 0 → type ( whether file or directory (In linux folder is called directory) )
-
 - **`_`** : Regular file
 - **`d`**: Directory
 - **`l`**: Symbolic link
@@ -72,9 +94,10 @@ _ r w x r _ _ _ w _
 ~ **Note** Ensure you have proper power or privilege for assigning permissions to the files.
 
 ---
+## 🎚 Process Priority (nice & renice)
 Nice cmd is used to set priority of the process . for non -root user the range belongs to +0 — +19 least priority 
 
-Type: nice -n+15 find / -name “file-name”
+` nice -n+15 find / -name “file-name” `
 
 for security reasons user limitation can be set by configuring limit.conf file 
 
@@ -82,7 +105,7 @@ for security reasons user limitation can be set by configuring limit.conf file
 
 renice - cmd is used to change the priority of running process .
 
-— renice +15 -p 1163 [ -p is for process id flag 1163 is pid for GID -g and for UID -u ]
+`renice +15 -p 1163 ` [ -p is for process id flag 1163 is pid for GID -g and for UID -u ]
 
 ---
 
@@ -210,6 +233,176 @@ for example :-  kill -9 1664
 )
 
 ```
+# **1️⃣ Shell Types & Differences (bash, sh, zsh, dash)**
+
+```
+bash     → Most common shell on Linux distros
+sh       → POSIX-compliant minimal shell
+zsh      → Advanced shell with themes & auto-suggestions
+dash     → Faster, lightweight shell (Ubuntu uses for /bin/sh)
+```
+
+**Add:** How to check current shell
+
+```
+echo $SHELL
+```
+
+---
+
+# **2️⃣ Environment Variables (VERY important)**
+
+Examples to add:
+
+```
+printenv          Show all environment variables
+export VAR=value  Create environment variable
+PATH              Path used to search commands
+HOME              User’s home directory
+PWD               Current directory
+```
+
+---
+
+# **3️⃣ File Redirection & Pipes**
+
+This is ESSENTIAL for beginners.
+
+```
+>      Redirect output (overwrite)
+>>     Redirect output (append)
+<      Redirect input
+|      Pipe output to another command
+2>     Redirect errors
+&>     Redirect everything
+```
+
+Examples:
+
+```
+ls > out.txt
+ls | grep "txt"
+```
+
+---
+
+# **4️⃣ Wildcards & Globbing**
+
+```
+*     Match anything
+?     Match single character
+[ ]   Match from a set
+```
+
+Example:
+
+```
+ls *.txt
+```
+
+---
+
+# **5️⃣ Process Management (Advanced)**
+
+Add small systemd examples:
+
+### **Start/Stop/Status**
+
+```
+systemctl start apache2
+systemctl stop apache2
+systemctl restart apache2
+systemctl status apache2
+```
+
+### **Enable Autostart**
+
+```
+systemctl enable service
+systemctl disable service
+```
+
+---
+
+# **6️⃣ Disk & Storage Commands**
+
+These are missing and very useful:
+
+```
+du -sh *      Show folder sizes
+fdisk -l      List disks/partitions
+lsblk         Display block devices
+blkid         Show UUIDs of partitions
+parted        Partition manager
+mount -o rw   Mount read-write
+umount        Unmount filesystem
+```
+
+---
+
+# **7️⃣ Services & Logs**
+
+### **System Logs**
+
+```
+journalctl -xe            View system logs
+dmesg                     Kernel messages
+tail -f /var/log/syslog   Live logs
+```
+
+---
+
+# **8️⃣ Cron Jobs (Task Scheduling)**
+
+This is needed for advanced section:
+
+### **Edit cron jobs**
+
+```
+crontab -e
+```
+
+### **List cron jobs**
+
+```
+crontab -l
+```
+
+### Example:
+
+```
+0 3 * * * /usr/bin/backup.sh
+```
+
+---
+
+# **9️⃣ Networking Advanced Commands**
+
+Add these to look pro-level:
+
+```
+ip route            Show routing table
+nmcli               Network manager command-line tool
+dig                 DNS lookup
+nslookup            DNS query
+host                DNS lookup simple
+scp                 Secure copy between machines
+rsync -avz          Sync files/directories
+```
+
+---
+
+# **🔟 System Info & Monitoring (More Advanced)**
+
+```
+uptime        Show system uptime/load average
+dmidecode     Show hardware info
+sar           System activity report
+iostat        Disk I/O stats
+vmstat        Memory, process, I/O stats
+```
+
+---
 
 ## Linux File System Hierarchy
 
