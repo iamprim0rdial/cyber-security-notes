@@ -241,3 +241,12 @@ for example :-  kill -9 1664
 | `/tmp` | **Temporary Files** | Used for storing temporary files created by applications. |
 | `/usr` | **User Programs and Data** | Contains non-essential user applications and files (e.g., `/usr/bin` for user binaries, `/usr/lib` for libraries). |
 | `/var` | **Variable Files** | Contains files that vary in size, such as logs (`/var/log`), mail (`/var/mail`), and databases. |
+
+
+---
+
+## Graphical version of Directories in Linux. 
+### [Source of image](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained )
+![standard-unix-filesystem-hierarchy-1](https://github.com/user-attachments/assets/ce8b32ac-e91b-4299-a19f-c5596f0a4af4)
+
+
