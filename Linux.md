@@ -109,7 +109,7 @@ sort             Sort lines in a file
 diff             Compare two files line by line
 cmp              Compare files byte by byte
 find             Search for files/directories
-shred            Securely delete files
+shred            Make content of file unreadable
 mount            Mount file systems
 tar              Create or extract tar archives
 zip              Create zip archives
@@ -139,7 +139,7 @@ sudo             Run command as superuser
 ## 🌐 Networking & Internet
 ```
 ssh              Connect to remote machines
-ifconfig         Show/assign IP (older tool)
+ifconfig         Show/assign IP (older)
 ip address       Show detailed network info
 ping             Test network connectivity
 traceroute       Show path packets travel
@@ -189,11 +189,9 @@ finger           Show info about system users
 
 ## Advance
 ```
-
 lscpu:              display information about the CPU architecture
 lspci:              display list of PCI devices.
 lsusb:              display list of usb devices.
-df -h:              report file system space usage [-h: is a flag]
 free -h:            Display amount of free and used memory in the system
 hostnamectl:        Control the system hostname
 lsb_release -a:     print OS information [-a is a flag].  Alternate : cat /etc/os-release
@@ -212,8 +210,6 @@ for example :-  kill -9 1664
 )
 
 ```
-
----
 
 ## Linux File System Hierarchy
 
