@@ -86,54 +86,108 @@ renice - cmd is used to change the priority of running process .
 
 ---
 
-## Basic Linux Command:
-
+## Linux Commands
+---
+## 📁 File & Directory Management
 ```
-ls:              The most frequently used command in Linux to list directories
-pwd:             Print working directory command in Linux
-cd:              Linux command to navigate through directories
-mkdir:           Used to create directories in Linux
-mv :             Move or rename files in Linux
-cp:              copying files in Linux
-rm:              Delete files or directories
-touch:           Create blank/empty files
-clear:           Clear the terminal display
-cat:             Display file contents on the terminal
-echo:            Print any text that follows the command
-less:            Linux command to display paged outputs in the terminal
-man:             Access manual pages for all Linux commands
-uname:           Linux command to get basic information about the OS
-whoami:          Get the active username
-tar:             Command to extract and compress files in linux
-more:            Linux command to display paged outputs in the terminal
-grep:            Search for a string within an output
-head:            Return the specified number of lines from the top
-tail:            Return the specified number of lines from the bottom
-diff:            Find the difference between two files
-cmp:             Allows you to check if two files are identical
-sort:            Linux command to sort the content of a file while outputting
-zip:             Zip files in Linux
-unzip:           Unzip files in Linux
-service:         Linux command to start and stop services
-ps:              Display process snapshot
-kill:            Kill active processes by process ID or name
-df:              Display disk filesystem information
-mount:           Mount file systems in Linux
-chmod:           Command to change file permissions
-chown:           Command for granting ownership of files or folders
-ifconfig:        Display network interfaces and IP addresses
-traceroute:      Trace all the network hops to reach the destination
-wget:            Direct download files from the internet
-sudo:            Command to escalate privileges in Linux
-whereis:         Locate the binary, source, and manual pages for a command
-whatis:          Find what a command is used for
-top:             View active processes live with their system usage
-passwd:          Create or update passwords for existing users
-
-
+ls               List files and directories
+pwd              Show current working directory
+cd               Navigate between directories
+mkdir            Create a directory
+rmdir            Remove empty directory
+touch            Create an empty file / update timestamp
+cp               Copy files or directories
+mv               Move or rename files
+rm               Remove files or directories
+ln               Create hard or symbolic links
+cat              Show file contents
+less             View file contents page-by-page
+more             View file contents (older)
+head             Show first lines of a file
+tail             Show last lines of a file
+sort             Sort lines in a file
+diff             Compare two files line by line
+cmp              Compare files byte by byte
+find             Search for files/directories
+shred            Securely delete files
+mount            Mount file systems
+tar              Create or extract tar archives
+zip              Create zip archives
+unzip            Extract zip archives
 ```
 
-## Advance Linux Command:
+## 📝 Text Editing & Viewing
+```
+nano             Simple terminal editor
+vim              Advanced terminal editor
+echo             Print text
+```
+
+## 👤 User & Permission Management
+```
+whoami           Show current user
+useradd          Add a new user
+adduser          Friendlier user creation tool
+su               Switch user
+exit             Exit current user/shell
+passwd           Change user password
+chmod            Change permissions
+chown            Change file ownership
+sudo             Run command as superuser
+```
+
+## 🌐 Networking & Internet
+```
+ssh              Connect to remote machines
+ifconfig         Show/assign IP (older tool)
+ip address       Show detailed network info
+ping             Test network connectivity
+traceroute       Show path packets travel
+curl             Transfer data to/from a server
+wget             Download files from internet
+netstat          Show network connections (older)
+ss               Show socket statistics (modern)
+iptables         Manage firewall rules
+ufw              Simple firewall manager
+resolvectl status Show DNS configuration
+```
+
+## 📦 Package & System Management
+```
+apt              Install/remove software packages
+systemctl        Control services & system state
+service          Manage services (older)
+reboot           Restart system
+shutdown         Shut down system
+history          View command history
+```
+
+## 📊 Process & System Monitoring
+```
+ps               Snapshot of running processes
+top              Real-time process viewer
+htop             Enhanced interactive process viewer
+kill             Kill a process by PID
+pkill            Kill processes by name
+free             Show RAM usage
+df               Show disk usage
+uname            Show system/kernel info
+neofetch         Display system info visually
+cal              Show calendar
+clear            Clear screen
+```
+
+## 🔍 Searching & Information
+```
+grep             Search text using patterns
+awk              Process/format text
+man              Manual pages for commands
+whatis           One-line command description
+whereis          Locate command binary/source/manual
+finger           Show info about system users
+```
+
+## Advance
 ```
 
 lscpu:              display information about the CPU architecture
