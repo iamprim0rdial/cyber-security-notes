@@ -32,15 +32,17 @@ print(url[7])  # 'w' is in 8th position. Index starts from 'h' at position 0.
 print(len(url))  # prints the number of characters in the URL
 print(url.upper())  # Converts all characters in the URL to uppercase
 print(url.lower())  # Converts all characters in the URL to lowercase
+
 print("github" in url)  # Returns True if 'github' is found in the URL
+print(url[8:14])  # prints "www.gi" Extracts 'github' from the URL (from index 8 to 14) (n1 : n2 - 1) 
+print(url.split(".")) # print '['https://www', 'github', 'com']' splits the URL at every '.' and returns a list
+print(url.find("github")) # print 12 Returns the index of the first occurrence of 'github'. if string not found it will return -1 
+print(url.startswith("https"))  # Returns True since the URL starts with 'https' else False if not.
+print(url.endswith(".com"))  # Returns True since the URL ends with '.com'
 
 new_url = url.replace("github", "gitlab")  # Replaces 'github' with 'gitlab'
 print(new_url)  # prints 'https://www.gitlab.com'
-print(url[8:14])  # Extracts 'github' from the URL (from index 8 to 14)
-print(url.split("."))  # splits the URL at every '.' and returns a list
-print(url.find("github"))  # Returns the index of the first occurrence of 'github'
-print(url.startswith("https"))  # Returns True since the URL starts with 'https'
-print(url.endswith(".com"))  # Returns True since the URL ends with '.com'
+
 
 ```
 ---
