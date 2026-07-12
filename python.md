@@ -1,4 +1,28 @@
 ## Variable and Data Type:
+They are the containers for holding values or data. for example  a = 5, so that mean a is holding Integer( Numerical/ Numbers ) type value. There are others type of data in python: Integers, String, float, Character, list, Set, Tuple, Dictionary,
+
+The size of varible is depends on the type of data being stored in variable.
+
+## Data Types
+
+| Data type | str |
+| --- | --- |
+| Numeric Types: | `int`, `float`, `complex` |
+| Sequence Types: | `list`, `tuple`, `range` |
+| Mapping Type: | `dict` |
+| Set Types: | `set`, `frozenset` |
+| Boolean Type: | `bool` |
+| Binary Types: | `bytes`, `bytearray`, `memoryview` |
+| None Type: | `NoneType` |
+
+
+Note : A heterogeneous list is **a data structure that can hold elements of different data types (like integers, strings, floats) within the same list**, unlike traditional lists where all items must be the same type (homogeneous). This flexibility allows for diverse data storage, useful in scenarios like symbol tables, data serialization, or representing complex data rows from databases.
+
+- For Deep Data Type Knowledge
+    
+    https://jakevdp.github.io/PythonDataScienceHandbook/02.01-understanding-data-types.html
+    
+
 ```bash
 port = 8080  # int
 url = "http://github.com"  # string
@@ -117,12 +141,68 @@ print(list_1 * 3)  # Output: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 
 ---
 
-## Try and Catch 
-- try and catch are use to handle the exception 
+## Try and Except 
+`Python treats everything as an` **object** `, including exceptions.`
+- try and except are use to handle the exception 
 - try block contains code that can raise an exception and except block contain code to handle that exception
-
+  
 Note: exception: An exception is an error that occurs during the execution of a program, which disrupts its normal flow.
 
+---
+
+This occurs because compilers are smart. The CPython compiler attempts to make optimizations called peephole optimizations
+
+---
+## interned objects. 
+- **Interned objects** are often a source of confusion. Optimization technique used by the CPython implementation to save memory and speed up execution by reusing existing immutable objects instead of creating new instances. Just remember, if you’re ever in doubt, that you can always use id() and is to determine object equality
+```
+a = 10
+b = 10
+print(a is b)  # True (Both variables point to the same memory address)
+
+x = 300
+y = 300
+print(x is y)  # False (Outside the cached range; distinct objects are created)
+```
+
+---
+## print() function :
+- It is used to print the string or any character you wrote.
+- The print() function is taking a single parameter.
+However, the actual syntax of the print function accepts 5 parameters
+
+print(object= separator= end= file= flush=)
+
+Here,
+- object - value(s) to be printed
+- sep (optional) - allows us to separate multiple objects inside print().
+- end (optional) - allows us to add add specific values like new line "\\n", tab "\\t"
+- file (optional) - where the values are printed. It's default value is sys.stdout (screen)
+- flush (optional) - boolean specifying if the output is flushed or buffered. Default: False
+  
+---
+## Comments
+
+Comments are used in code to tell some info about the code. it is written by the person who is writing the code to tell what is line will do or what is going on. for e.g you wrote a code of 20 lines, you also added comments of each line and you shutdown your pc and after sometime you looking at your code you will know, what did you do last time . for adding comments you can use #YOUR CODE OF ANY TEXT. any text written after # will ignore by the interpreter, mean interpeter will skipp the  #line .
+
+---
+
+## Modules
+
+It is pre-written piece of code by the other developers. So you dont to write again and again. It save time. you can simple import the these modules with the help of “ import “ function . 
+
+for e.g import math, This line will add math module to your code and you can use all the functions of this math module and take advantage and save time.
+
+---
+## Type Casting
+
+Type casting is **a way of converting data from one data type to another data type**. This process of data conversion is also known as type conversion or type coercion. 
+The key difference is that **type casting is a manual (explicit) conversion performed by the programmer using a cast operator, while type coercion is an automatic (implicit) conversion done by the compiler or runtime environment**    
+
+---
+## Read Zen of Python
+
+---
 ---
 
 ## Python Library for bug hunting
