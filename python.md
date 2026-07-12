@@ -50,7 +50,7 @@ print(new_url)  # prints 'https://www.gitlab.com'
 ## List
 ```bash
 
-data = ["github.com", 80, 5.5]
+data = ["github.com", 80, 5.5] # Heterogeneous List ( contain mixed data type in list unlike Homogeneous list [same data type ] )
 
 print("domain " + data[0])  # Accessing the first element (github.com) and concatenating it with the string
 
