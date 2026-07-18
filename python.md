@@ -1,5 +1,6 @@
+**IN PYTHON , EVERYTHING IS AN OBJECT. BY EVERYTHING I MEAN DATATYPES, INT, STR, CHAR, CLASS, TRY AND EXCEPT BLOCK, IDENTIFIERS . BASICALLY EVERYTHING**
 ## Variable and Data Type:
-They are the containers for holding values or data. for example  a = 5, so that mean a is holding Integer( Numerical/ Numbers ) type value. There are others type of data in python: Integers, String, float, Character, list, Set, Tuple, Dictionary,
+In python, variables are pointer(Labels) to an native python object . It refer to an object, so for example you created an variable "a" which hold value "5" integer object and  If you create 10 more variables assigned to 5 (e.g., b = 5, c = 5), Python does not allocate 10 new memory blocks. Instead, it points all 10 variables to the exact same, single integer object  which is highly effecient . There are others type of data in python: Integers, String, float, Character, list, Set, Tuple, Dictionary,
 
 The size of varible is depends on the type of data being stored in variable.
 
@@ -15,13 +16,30 @@ The size of varible is depends on the type of data being stored in variable.
 | Binary Types: | `bytes`, `bytearray`, `memoryview` |
 | None Type: | `NoneType` |
 
+**Understanding the 3 Core Concepts**
+1. **Mutable vs. Immutable**:
+
+    ◦ **Mutable**: objects can change their values in place (e.g., adding an item to a list keeps the same memory address). example of mutable datatype: list, set, dict, bytearray.
+   
+   ◦ **Immutable**" objects cannot change. If you "modify" a string or integer, Python secretly creates a brand-new object somewhere else in memory and points your variable to it. [1, 2, 3, 4, 5]. example of immutable datatype : tuple, frozenset, primitive numbers, string, byte.
+   
+3. **Hashable vs. Non-hashable**:
+   
+    ◦ An object is **hashable** if it has a hash value that never changes during its lifetime (requiring it to be immutable).
+   
+    ◦ Dictionary keys and set elements **must** be hashable so Python can find them instantly. [1, 2, 3, 4]
+   
+5. **Ordered vs. Unordered**:
+   
+    ◦ **Ordered** collections remember the exact sequence in which you added items.
+   
+    ◦ **Unordered** collections (like sets) care only about existence, not arrangement.
 
 Note : A heterogeneous list is **a data structure that can hold elements of different data types (like integers, strings, floats) within the same list**, unlike traditional lists where all items must be the same type (homogeneous). This flexibility allows for diverse data storage, useful in scenarios like symbol tables, data serialization, or representing complex data rows from databases.
 
-- For Deep Data Type Knowledge
+- [For Deep Data Type Knowledge](https://jakevdp.github.io/PythonDataScienceHandbook/02.01-understanding-data-types.html)
     
-    https://jakevdp.github.io/PythonDataScienceHandbook/02.01-understanding-data-types.html
-    
+---
 
 ```bash
 port = 8080  # int
