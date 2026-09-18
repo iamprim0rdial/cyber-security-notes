@@ -163,8 +163,27 @@ print(list_1 * 3)  # Output: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 `Python treats everything as an` **object** `, including exceptions.`
 - try and except are use to handle the exception 
 - try block contains code that can raise an exception and except block contain code to handle that exception
+
+```bash
+try:
+    # Code that might cause an error
+    result = 10 / int(input("Enter a number: "))
+except ZeroDivisionError:
+    # Runs ONLY if a division-by-zero occurs
+    print("You cannot divide by zero!")
+except ValueError:
+    # Runs ONLY if the input wasn't a valid number
+    print("Please enter a valid integer.")
+else:
+    # Runs ONLY if the try block succeeds without any errors
+    print(f"Success! The result is {result}")
+finally:
+    # ALWAYS runs, no matter what (great for cleanup like closing files)
+    print("Execution complete.")
+  ```
   
 Note: exception: An exception is an error that occurs during the execution of a program, which disrupts its normal flow.
+
 
 ---
 
@@ -220,7 +239,6 @@ The key difference is that **type casting is a manual (explicit) conversion pe
 ---
 ## Read Zen of Python
 
----
 ---
 
 ## Python Library for bug hunting
