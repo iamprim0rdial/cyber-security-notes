@@ -1,3 +1,12 @@
+## PYTHON PROGRAM EXECUTION FLOW
+**Step-by-step breakdown of what happens when you press that "Run" button in standard Python (CPython):**
+1. **Compilation (To Bytecode)** When you click the "Run" button in IDE, the editor hands your script over to the background Python engine (python.exe or CPython), the CPython compiler instantly parses the code. It checks for syntax errors and compiles the source code into an intermediate, low-level instruction set called **bytecode**.
+   `The Cache: To save time on future runs, CPython writes this bytecode into a .pyc file inside a automatically generated __pycache__ folder. If the code hasn't changed on the next run, Python skips this step and loads the .pyc file directly.`
+2. **The Python Virtual Machine (PVM)** Next, CPython loads this bytecode into the Python Virtual Machine (PVM). The PVM is the runtime engine of Python. It is an interpreter that loops through the bytecode instructions one by one.
+3. **Execution (To Machine Code)** The PVM translates each piece of bytecode into CPU-understandable machine code (binary instructions) on the fly, interacting with your operating system to actually execute the program.
+
+---
+
 **IN PYTHON , EVERYTHING IS AN OBJECT. BY EVERYTHING I MEAN DATATYPES, INT, STR, CHAR, CLASS, TRY AND EXCEPT BLOCK, IDENTIFIERS . BASICALLY EVERYTHING**
 ## Variable and Data Type:
 In python, variables are pointer(Labels) to an native python object . It refer to an object, so for example you created an variable "a" which hold value "5" integer object and  If you create 10 more variables assigned to 5 (e.g., b = 5, c = 5), Python does not allocate 10 new memory blocks. Instead, it points all 10 variables to the exact same, single integer object  which is highly effecient . There are others type of data in python: Integers, String, float, Character, list, Set, Tuple, Dictionary,
